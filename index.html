@@ -814,6 +814,10 @@
 		href = "tel:+56962000921">
 		Llamar
 	      </a>
+                <button 
+                  on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: product.selectedServicio+1, img: product[product.selectedColor].imagenes[0]}]) } ),item-list.refresh "
+                  class="ampstart-btn caps m2 close-gallery-button">Agrega
+                </button>
 	      <amp-img src="/img/mantencion_electrica.png"
 		width="1024"
 		height="682"
