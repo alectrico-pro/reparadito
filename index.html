@@ -683,10 +683,7 @@
        -->
 
 	<div class="product-gallery">
-	  <!--
 	  <ul [hidden]="product.selectedColor != 'blue'">
-          -->
-          <ul>
 	    <li>
 	      <amp-img on="tap:AMP.setState({product: {selectedSlideForBlue: 0}})"
 		src="/img/alectrico_60_40.png"
@@ -954,6 +951,7 @@
 	<amp-state id="product">
 	  <script type="application/json">
 	    {
+              "selectedCargas"; 0,
 	      "selectedColor": "blue",
 	      "selectedSize": "S",
 	      "selectedSlide": 0,
@@ -964,21 +962,6 @@
 	      "selectedSlideForGreen": 0,
 	      "moreItemsPageIndex": 0,
 	      "hasMorePages": false,
-		"circuitos": {
-		  "C": "C: Calefacción",
-		  "D": "D: Dormitorios",
-		  "E": "E: Encimera",
-		  "N": "N: Enchufes Normales",
-		  "Z": "Z: Exclusivo de Lavavajillas",
-		  "A": "A: Exclusivo de Aire Acondicionado",
-		  "M": "M: Mesón de Cocina",
-		  "L": "L: Loggia",
-		  "H": "H: Horno Eléctrico",
-		  "I": "I: Iluminación",
-		  "R": "R: Refrigeradores",
-		  "S": "S: Sala"
-		  },
-
 	     "blue": {
 		"ids" : {
 		  "0": "",
@@ -999,189 +982,16 @@
 		  "5": "Instalación de Enchufes.",
 		  "6": "Certificación TE1 de Instalaciones Eléctricas."
 		},
-		"circuitos": {
-		  "0": "I",
-		  "1": "I",
-		  "2": "I",
-		  "3": "I",
-		  "4": "I",
-		  "5": "I",
-		  "6": "I"
-		},
-		"sizes": {
-		  "C": "300 W",
-		  "D": "300 W",
-		  "E": "200 W",
-		  "N": "300 W",
-		  "Z": "200 W",
-		  "A": "100 W",
-		  "S": "200 W",
-		  "M": "200 W",
-		  "L": "100 W",
-		  "H": "200 W",
-		  "I": "200 W",
-		  "R": "100 W"
-		},
-	       "defaultSize": "I"
+                "imagenes": {
+                  "0": "https://repair.alectrico.cl/img/alectrico_60_40.png",
+                  "1": "https://repair.alectrico.cl/img/mantencion_electrica_60_40.png",
+                  "2": "https://repair.alectrico.cl/img/atencion_corte_de_luz_60_40.png",
+                  "3": "https://repair.alectrico.cl/img/proyecto_energia_solar_60_40.png",
+                  "4": "https://repair.alectrico.cl/img/instalacion_luminaria_60_40.png",
+                  "5": "https://repair.alectrico.cl/img/instalacion_enchufe_60_40.png",
+                  "6": "https://repair.alectrico.cl/img/instalador_sec_60_40.png"
+                 },
 	      },
-
-	      "green": {
-		"ids" : {
-		  "0": "35",
-		  "1": "99"
-		  },
-		"nombres": {
-		  "0": "Ampolleta Led.",
-		  "1": "Ampolleta Incandescente."
-		},
-		"circuitos": {
-		  "0": "I",
-		  "1": "I"
-		},
-		"sizes": {
-		  "C": "unavailable",
-		  "D": "unavailable",
-		  "E": "unavailable",
-		  "N": "unavailable",
-		  "Z": "unavailable",
-		  "A": "unavailable",
-		  "S": "unavailable",
-		  "M": "unavailable",
-		  "L": "unavailable",
-		  "H": "unavailable",
-		  "I": "200 W",
-		  "R": "unavailable"
-		},
-		"defaultSize": "I"
-	      },
-
-	      "golden": {
-		"ids" :{
-		  "0": "36",
-		  "1": "1692",
-		  "2": "124",
-		  "3": "236",
-		  "4": "211",
-		  "5": "579"
-		},	
-		"nombres" : {
-		  "0": "Juguera.",
-		  "1": "Microondas.",
-		  "2": "Hornillo.",
-		  "3": "Hervidor.",
-		  "4": "Olla Arrocera.",
-		  "5": "Cafetera Expresso"
-
-		},
-		"circuito_recomendado":{
-		  "0": "M",
-		  "1": "M",
-		  "2": "M",
-		  "3": "M",
-		  "4": "M",
-		  "5": "M"
-
-		},
-		"sizes": {
-		  "C": "unavailable",
-		  "D": "unavailable",
-		  "E": "unavailable",
-		  "N": "200 W",
-		  "Z": "unavailable",
-		  "A": "unavailable",
-		  "S": "unavailable",
-		  "M": "900 W",
-		  "L": "unavailable",
-		  "H": "unavailable",
-		  "I": "unavailable",
-		  "R": "unavailable"
-
-		},
-		"defaultSize": "M"
-	      },
-
-	      "coral": {
-		"ids": {
-		  "0": "37",
-		  "1": "843",
-		  "2": "252",
-		  "3": "921",
-		  "4": "7",
-		  "5": "276",
-		  "6": "101"
-		},
-		"nombres": {
-		  "0": "Plancha.",
-		  "1": "Frigobar.",
-		  "2": "Refrigerador.",
-		  "3": "Refrigerador de dos puertas.",
-		  "4": "Lavadora de ropas.",
-		  "5": "Secadora de ropas.",
-		  "6": "Lavalozas."
-		},
-		"circuitos": {
-		  "0": "N",
-		  "1": "R",
-		  "2": "R",
-		  "3": "R",
-		  "4": "L",
-		  "5": "L",
-		  "6": "Z"            
-
-		},
-		"sizes": {
-		  "I": "unavailable",
-		  "C": "unavailable",
-		  "D": "300 W",
-		  "E": "unavailable",
-		  "N": "300 W",
-		  "Z": "unavailable",
-		  "A": "unavailable",
-		  "S": "1200 W",
-		  "M": "900 W",
-		  "L": "4000 W",
-		  "H": "unavailable",
-		  "R": "300 W"
-		},
-		"defaultSize": "R"
-	      },
-
-	      "red": {
-		"ids": {
-		  "0": "71",
-		  "1": "76"
-		},
-		"nombres": {
-		  "0": "Cocina Encimera Vitrocerámica.",
-		  "1": "Cocina Encimera Inducción."
-		},
-		"circuitos": {
-		  "0": "E",
-		  "1": "E"
-
-		},
-		"sizes": {
-		  "I": "unavailable",
-		  "C": "unavailable",
-		  "D": "unavailable",
-		  "E": "45000 W",
-		  "N": "unavailable",
-		  "Z": "3000 W",
-		  "A": "unavailable",
-		  "S": "unavailable",
-		  "M": "unavailable",
-		  "L": "3000 W",
-		  "H": "3000 W",
-		  "R": "unavailable"
-		},
-		"defaultSize": "E"
-	      }
-
-
-
-
-
-
 	    }
 	  </script>
 	</amp-state>
