@@ -639,8 +639,6 @@
 
 	  <amp-social-share type="facebook" width="30" height="22" data-param-app_id="1777886622479021"></amp-social-share>
 
-	  <amp-social-share type="gplus" width="30" height="22"></amp-social-share>
-
 	  <amp-social-share type="email" width="30" height="22"></amp-social-share>
 
 	  <amp-social-share type="pinterest" width="33" height="22"></amp-social-share>
@@ -779,7 +777,7 @@
 	Carruseles
       -->
 
-       <div class="product-gallery">
+       <div class="product-gallery" >
 	  <amp-carousel id="blue-apple-carousel"
 	    width="1024"
 	    height="682"
@@ -788,6 +786,7 @@
 	    [slide]="product.selectedSlideForBlue"
 	    on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForBlue: event.index}})"
 	    class="fadeIn"
+            hidden
 	    [hidden]="product.selectedColor != 'blue'">
 	    <div 
 	      role="button"
