@@ -927,11 +927,6 @@
 	      </a>	
 	    </div>
 	  </amp-image-lightbox>
-
-
-
-
-
 	    
 	  <amp-image-lightbox id="gallery-lightbox"
 	    layout="nodisplay">
@@ -947,7 +942,8 @@
 	  </amp-image-lightbox>
 	</div>
 
-		
+
+      <!-- Estados -->
 	<amp-state id="product">
 	  <script type="application/json">
 	    {
@@ -988,9 +984,22 @@
 	  </script>
 	</amp-state>
 
+        <amp-state id="itemsSrc">
+          <script type="application/json">
+            [
+            ]
+          </script>
+        </amp-state>
+
+
+
+
 	<p class="price-description"> Seleccionado:
 	  <span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Visita a Domicilio de Instalador Eléctrico Autorizado SEC.</span>
 	</p>
+
+
+
 
 
         <div class="product-gallery">
