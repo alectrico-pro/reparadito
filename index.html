@@ -992,6 +992,57 @@
 	  <span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Visita a Domicilio de Instalador Eléctrico Autorizado SEC.</span>
 	</p>
 
+
+        <div class="product-gallery">
+          <amp-list
+            class="mt3"
+            layout="fixed-height"
+            height= 162
+            items = "."
+            binding="no"
+            [src] = "itemsSrc"
+            id="item-list" >
+
+            <template type="amp-mustache">
+
+              <amp-img width="100"
+                tabindex = 0
+                height="90"
+                layout="fixed"
+                aria-describedby = "caption"
+                alt="{{cantidad}}"
+                src="{{img}}">
+
+                <div>
+                  <button
+                    on="tap:AMP.setState({itemsSrc: itemsSrc.filter(a => a.id != {{id}})}),item-list.refresh"
+                    class="close-gallery-button">X
+                  </button>
+                </div>
+              </amp-img>
+
+            </template>
+
+            <div overflow
+              class = "list-overflow">
+              VER MAS
+            </div>
+
+            <div fallback>
+              <div class = "content">
+                <button 
+                  class="ampstart-btn ml1 caps"
+                  on="tap:item-list.refresh"
+                  type='submit'>Refrescar
+                </button>
+              </div>
+            </div>
+          </amp-list>
+        </div> <!-- product-gallery 
+
+
+
+
 	<form id="order"
 	  method="POST"
 	  action-xhr="https://api-staging.alectrico.cl/api/v1/electrico/circuitos/1/addToCircuito.json"
