@@ -553,8 +553,15 @@
       z-index: 1;
       position: absolute;
       right: 0;
+    }
+
+    .agregar-gallery-button {
+      z-index: 1;
+      position: absolute;
+      right: 0;
       bottom: 0;
     }
+
 
 
     </style>
@@ -654,7 +661,7 @@
 
         <p id="product-description"
           class="m1">
-          La relación con Aléctrico comienza con una Visita a Domicilio de un Instalador Eléctrico Autorizado SEC. De esta forma se puede establecer la factibilidad del servicio solicitado.
+          Junte los servicios mostrados abajo y luego enviélos al servidor. De esta forma un colaborador independiente de alectrico.cl podrá conocerlos y ofrecerle una solución. 
        </p>
 
         <!--
@@ -802,7 +809,7 @@
 	      </a>
                 <button 
                   on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 0, img: product[product.selectedColor].imagenes[0]}]) } ),item-list.refresh "
-                  class="ampstart-btn caps m2 close-gallery-button">Agrega
+                  class="ampstart-btn caps m2 agrega-gallery-button">Agrega
                 </button>
 
 	      <amp-img src="/img/alectrico.png"
@@ -824,7 +831,7 @@
 	      </a>
                 <button 
                   on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 1, img: product[product.selectedColor].imagenes[1]}]) } ),item-list.refresh "
-                  class="ampstart-btn caps m2 close-gallery-button">Agrega
+                  class="ampstart-btn caps m2 agrega-gallery-button">Agrega
                 </button>
 	      <amp-img src="/img/mantencion_electrica.png"
 		width="1024"
@@ -845,7 +852,7 @@
 	      </a>
                 <button 
                   on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 2, img: product[product.selectedColor].imagenes[2]}]) } ),item-list.refresh "
-                  class="ampstart-btn caps m2 close-gallery-button">Agrega
+                  class="ampstart-btn caps m2 agrega-gallery-button">Agrega
                 </button>
 	      <amp-img src="/img/atencion_corte_de_luz.png"
 		width="1024"
@@ -866,7 +873,7 @@
 	      </a>
                 <button 
                   on="tap:AMP.setState( { product: { selectedServicio: product.selectedServicio + 1}, itemsSrc: itemsSrc.concat([ { id: 3, img: product[product.selectedColor].imagenes[3]}]) } ),item-list.refresh "
-                  class="ampstart-btn caps m2 close-gallery-button">Agrega
+                  class="ampstart-btn caps m2 agrega-gallery-button">Agrega
                 </button>
 
 
