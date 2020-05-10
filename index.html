@@ -1102,6 +1102,15 @@
           id = "cart-list-template">
           Conectado con el servidor
           {{#items}}
+              <amp-img width="100"
+                tabindex = 0
+                height="90"
+                layout="fixed"
+                aria-describedby = "caption"
+                alt="{{cantidad}}"
+                src="{{img}}">
+             </amp-img>
+          {{/items}}
         </template>
 
 	<form id="order"
