@@ -1,0 +1,3 @@
+convert -flatten -background '#ffffff' -transparent-color '#ffffff' -density 72x72 -quality 90 -resize 800x atencion_corte_de_luz.png atencion_corte_de_luz.png
+
+
