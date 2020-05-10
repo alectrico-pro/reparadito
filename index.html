@@ -974,6 +974,8 @@
 	  </amp-image-lightbox>
 	</div>
 
+        <amp-state id="ping">
+        </amp-state>
 
       <!-- Estados -->
 	<amp-state id="product">
@@ -1079,10 +1081,28 @@
               </div>
             </div>
           </amp-list>
-        </div> <!-- product-gallery 
+        </div>
+        <!-- product-gallery -->
 
 
+        <amp-list 
+          template="cart-list-template"
+          credentials="include"
+          width="auto"
+          height="180"
+          items="."
+          single-item
+          layout="fixed-height"
+          src="https://cornavi.herokuapp.com/api/v1/electrico/circuitos/get.json?clientId=CLIENT_ID(uid)&_=RANDOM"
+          id="cart-list">
+          <div overflow = "" class = "list-overflow">VER MÁS</div>
+        </amp-list>
 
+        <template type="amp-mustache"
+          id = "cart-list-template">
+          Conectado con el servidor
+          {{#items}}
+        </template>
 
 	<form id="order"
 	  method="POST"
@@ -1379,7 +1399,7 @@
 		"on": "visible",
 		"request": "pageview",
 		"vars": {
-		  "title": "Aléctrico Designer"
+		  "title": "Aléctrico Repair"
 		}
 	      }
 	    }
@@ -1389,29 +1409,10 @@
 
 	<amp-install-serviceworker
 	  src="/sw.js"
-	  data-iframe-src="https://designer.com/sw.js"
+	  data-iframe-src="https://repair.alectrico.cl/sw.js"
 	  layout="nodisplay">
 	</amp-install-serviceworker>
 
-        <!--
-	<amp-selector role="tablist"
-	  layout="container"
-	  class="ampTabContainer ampstart-headerbar-nav"
-	  keyboard-select-mode="select">
-	  <div role="tab"
-	    class="tabButton h4 ampstart-nav-item"
-	    option="c">CIRCUITOS</div>
-	  <div role="tabpanel"
-	    class="tabContent p1 p">Se muestran los circuitos a los que podría conectar electrodomésticos. Aquellos que no son adecuados para un electrodoméstico en particular están marcados con una X. En algunos circuitos solo puede haber un tipo de electrodoméstico, estos circuitos se llaman exclusivos.</div>
-	  <div role="tab"
-	    class="tabButton h4 ampstart-nav-item"
-	    selected
-	    option="a">GRUPOS</div>
-	  <div role="tabpanel"
-	    class="tabContent p1 p">Los electrodomésticos están agrupados de acuerdo a la potencia máxima que consumen y considerando los circuitos a los que pueden ser conectados. El grupo azul es diferente, no agrupa electrodomésticos sino los servicios que puede contratar en alectrico.cl.</div>
-
-	</amp-selector>
-        -->
       </div>
     </div>
   </body>
