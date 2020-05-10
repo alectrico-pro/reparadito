@@ -1084,7 +1084,7 @@
         </div>
         <!-- product-gallery -->
 
-
+        <div class="product-gallery">
         <amp-list 
           template="cart-list-template"
           credentials="include"
@@ -1097,9 +1097,11 @@
           id="cart-list">
           <div overflow = "" class = "list-overflow">VER MÁS</div>
           <div placeholder>Conectando con el Servidor ...</div>
-          <div fallback>Lo sentimos, no es posible atender ahora.</div>
+          <div fallback>Lo sentimos, no es posible atender ahora, espere unos minutos y pruebe de nuevo.
+           <button on="tap:cart-list.refresh">Intentar la Conexión al Servidor</button>
+         </div>
         </amp-list>
-
+        </div>
         <template type="amp-mustache"
           id = "cart-list-template">
           Conectado con el servidor
@@ -1113,6 +1115,7 @@
                 src="{{img}}">
              </amp-img>
           {{/items}}
+
         </template>
 
 	<form id="order"
